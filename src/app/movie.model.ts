@@ -30,6 +30,8 @@ export class Language {
     showTime: string;
     price: number;
     available: boolean;
+   // movie: Movie;
+
     
   
     constructor(

@@ -3,20 +3,20 @@ export const db = {
 
     "languages":[
 
-        {name: "hindi", checked: true},
-        {name: "english", checked: true},
-        {name: "telgu", checked: true},
-        {name: "punjabi", checked: true}
+        {name: "Hindi", checked: true},
+        {name: "English", checked: true},
+        {name: "Telgu", checked: true},
+        {name: "Punjabi", checked: true}
         
 
     ],
 
     "genres":[
 
-        {name:"action", checked: true},
-        {name:"fantasy", checked:true},
-        {name:"romance", checked:true},
-        {name:"horror", checked:true}
+        {name:"Action", checked: true},
+        {name:"Fantasy", checked:true},
+        {name:"Romance", checked:true},
+        {name:"Horror", checked:true}
 
     ],
 

@@ -11,7 +11,8 @@ import {Movie} from "./movie.model"
 })
 export class AppComponent {
   title = 'movie';
-
+  
+  //movie: Movie = new Movie();
 
   errorMessage:string = "";
   //movies:Movie[] =[];
@@ -35,7 +36,28 @@ export class AppComponent {
       this.movies = db.movies;
       this.filteredMovies = this.movies;
   }
+
+
+  onCheckboxSelect() {
+    this.getFilteredMovies();
+  }
+  
+
+
+  getFilteredMovies(): void {
+    this.filteredMovies = this.movies.filter(movie => {
+     const languageMatch = this.selectedLanguage === '' || movie.language === this.selectedLanguage;
+      const genreMatch = this.selectedGenre === '' || movie.genre === this.selectedGenre;
+   return languageMatch && genreMatch;
+
+      //console.log(languageMatch);
+  });
+
+  
+
+
+
 }
 
 
-
+}

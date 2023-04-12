@@ -1,6 +1,6 @@
  /* Centered container styles */
  .container {
-  margin: 10px auto; /* Center horizontally */
+  margin: 5px auto; /* Center horizontally */
   max-width: 900px; /* Set max width for container */
   padding: 30px; /* Add some padding */
   background-color: hsl(249, 100%, 11%); /* Add background color */
@@ -37,8 +37,8 @@
 }
 .form-group
 {
-    margin-bottom: 50px;
-    margin-top:30px;
+    margin-bottom: 40px;
+    margin-top:10px;
     margin-left: 35px;
 }
 
@@ -59,7 +59,7 @@
 .logo {
   display: inline-block;
   height: 120px;
-  width: 120px;
+  width: 130px;
   background-image: url("../assets/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -78,3 +78,24 @@ text-shadow: 3px 3px #000;
       letter-spacing: 0.2em;
       text-transform: uppercase;
 }
+
+
+  .cardo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .copy
+  {
+    display: inline-block;
+  
+  font-size: 28px;
+  margin-top: 2px;
+  color: white;
+text-shadow: 3px 3px #000;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      -ms-flex-align: center;
+
+  }
+
