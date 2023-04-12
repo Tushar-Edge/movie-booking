@@ -17,9 +17,9 @@ export class AppComponent {
   errorMessage:string = "";
   //movies:Movie[] =[];
   filteredMovies:Movie[] = [];
-  selectedLanguage: string = '';
+  selectedLanguages:any={};
   languages:any[] = db.languages;
-   selectedGenre: string = '';
+   selectedGenres:any={};
   genres:any[] = db.genres;
 
   
@@ -27,10 +27,13 @@ export class AppComponent {
   //show: boolean;
 
   constructor(){
-   
+    this.languages.forEach(language => this.selectedLanguages[language.name] = false);
+    this.genres.forEach(genre => this.selectedGenres[genre.name] = false);
   
-    
+    this.filteredMovies=this.movies;
   }
+
+  
 
   ngOnInit(): void {
       this.movies = db.movies;
@@ -39,25 +42,38 @@ export class AppComponent {
 
 
   onCheckboxSelect() {
-    this.getFilteredMovies();
-  }
-  
-
-
-  getFilteredMovies(): void {
+    // Filter the movies based on selectedLanguages and selectedGenres
     this.filteredMovies = this.movies.filter(movie => {
-     const languageMatch = this.selectedLanguage === '' || movie.language === this.selectedLanguage;
-      const genreMatch = this.selectedGenre === '' || movie.genre === this.selectedGenre;
-   return languageMatch && genreMatch;
-
-      //console.log(languageMatch);
-  });
-
-  
-
-
+      if (this.selectedLanguages[movie.language] && this.selectedGenres[movie.genre]) {
+        return true;
+      }
+      if (this.selectedLanguages[movie.language] || this.selectedGenres[movie.genre]) {
+        return true;
+      }
+      
+      
+      return false;
+    });   
 
 }
 
 
+    clearFilters()
+    {
+
+      this.languages.forEach(language => this.selectedLanguages[language.name] = false);
+      this.genres.forEach(genre => this.selectedGenres[genre.name] = false);
+      this.filteredMovies=this.movies;
+    }
+
+    onCheckboxDeselect()
+    {
+
+      if(this.filteredMovies.length===0)
+      {
+        this.filteredMovies=this.movies;
+      }
+
+
+    }
 }

@@ -5,8 +5,8 @@ export const db = {
 
         {name: "Hindi", checked: true},
         {name: "English", checked: true},
-        {name: "Telgu", checked: true},
-        {name: "Punjabi", checked: true}
+        {name: "Punjabi", checked: true},
+        {name: "Telgu", checked: true}
         
 
     ],
@@ -14,9 +14,9 @@ export const db = {
     "genres":[
 
         {name:"Action", checked: true},
-        {name:"Fantasy", checked:true},
+        {name:"Thriller", checked:true},
         {name:"Romance", checked:true},
-        {name:"Horror", checked:true}
+        {name:"fantasy", checked:true}
 
     ],
 

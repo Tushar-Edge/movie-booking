@@ -92,10 +92,28 @@ text-shadow: 3px 3px #000;
   font-size: 28px;
   margin-top: 2px;
   color: white;
-text-shadow: 3px 3px #000;
+  text-shadow: 3px 3px #000;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       -ms-flex-align: center;
 
   }
+  .clear-filters-button {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  
+  .clear-filters-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
 
