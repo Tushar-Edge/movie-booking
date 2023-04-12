@@ -68,12 +68,12 @@ export class AppComponent {
 
     onCheckboxDeselect()
     {
-
-      if(this.filteredMovies.length===0)
-      {
-        this.filteredMovies=this.movies;
+     
+     
+      if (!Object.values(this.selectedLanguages).includes(true) && !Object.values(this.selectedGenres).includes(true)) {
+        this.filteredMovies = this.movies;
       }
 
-
+      
     }
 }

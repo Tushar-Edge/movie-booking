@@ -27,7 +27,7 @@
         <label>Languages</label>
         <div *ngFor="let language of languages">
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" [value]="language.name" [(ngModel)]="selectedLanguages[language.name]" (change)="onCheckboxSelect()" />
+            <input type="checkbox" class="form-check-input" [value]="language.name" [(ngModel)]="selectedLanguages[language.name]" (change)="onCheckboxSelect()" (change)="onCheckboxDeselect()"/>
             <label class="form-check-label">{{ language.name }}</label>
           </div>
         </div>
@@ -37,7 +37,7 @@
         <label>Genres</label>
         <div *ngFor="let genre of genres">
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" [value]="genre.name" [(ngModel)]="selectedGenres[genre.name]" (change)="onCheckboxSelect()"  />
+            <input type="checkbox" class="form-check-input" [value]="genre.name" [(ngModel)]="selectedGenres[genre.name]" (change)="onCheckboxSelect()" (change)="onCheckboxDeselect()" />
             <label class="form-check-label">{{ genre.name }}</label>
           </div>
         </div>
