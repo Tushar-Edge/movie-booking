@@ -1,0 +1,80 @@
+ /* Centered container styles */
+ .container {
+  margin: 10px auto; /* Center horizontally */
+  max-width: 900px; /* Set max width for container */
+  padding: 30px; /* Add some padding */
+  background-color: hsl(249, 100%, 11%); /* Add background color */
+  border-radius: 2rem;
+}
+
+/* Two column layout styles */
+.left-column {
+  width: 33.33%; /* Set width for left column */
+  float: left; /* Float left */
+  background-color: #000746; /* Add background color */
+  color: #fff700; /* Add font color */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in width */
+
+}
+
+.right-column {
+  width: 66.66%; /* Set width for right column */
+  float: left; /* Float left */
+  background-color: #b9b9b9; /* Add background color */
+  color: #000; /* Add font color */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in width */
+  
+
+}
+
+/* Clear floats after the columns */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-group
+{
+    margin-bottom: 50px;
+    margin-top:30px;
+    margin-left: 35px;
+}
+
+.form-check
+{
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+.my-btn
+{
+    margin-left: 35px;
+    size: 10px; 
+    margin-bottom: 26px;
+
+}
+
+.logo {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  background-image: url("../assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 0px;
+  margin-top: 2px;
+ 
+}
+
+.movie-mania {
+  display: inline-block;
+  
+  font-size: 28px;
+  margin-top: 2px;
+  color: white;
+text-shadow: 3px 3px #000;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+}
