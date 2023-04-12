@@ -30,6 +30,7 @@ export class Language {
     showTime: string;
     price: number;
     available: boolean;
+    
   
     constructor(
       id: number,
@@ -42,7 +43,8 @@ export class Language {
       language: string,
       showTime: string,
       price: number,
-      available: boolean
+      available: boolean,
+      
     ) {
       this.id = id;
       this.title = title;
@@ -55,6 +57,7 @@ export class Language {
       this.showTime = showTime;
       this.price = price;
       this.available = available;
+      
     }
   }
   

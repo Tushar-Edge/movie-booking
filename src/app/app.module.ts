@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardsComponent } from './cards/cards.component';
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -19,10 +21,12 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     CardsComponent
   ],
-  imports: [
+  imports: [FormsModule,
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

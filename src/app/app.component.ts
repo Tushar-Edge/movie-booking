@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { db } from "../assets/movie-db";
 import {Movie} from "./movie.model"
 
+//import { Movie } from '../movie.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,10 +22,14 @@ export class AppComponent {
   genres:any[] = db.genres;
 
   
-  movies: Movie[] = db.movies;
+  movies: Movie[] =[];
   //show: boolean;
 
-  constructor(){}
+  constructor(){
+   
+  
+    
+  }
 
   ngOnInit(): void {
       this.movies = db.movies;

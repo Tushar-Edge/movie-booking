@@ -1,8 +1,4 @@
 
-
-
-
-
 export const db = {
 
     "languages":[
@@ -29,7 +25,7 @@ export const db = {
     {
     "id": 1,
     "title": "Superman is flying",
-    "image": "https://i.picsum.photos/id/650/300/200.jpg?hmac=nuRnzrByBYKU6fsTl1xwz3MIpNrNjb0PjLJA5ypiOqU",
+    "image": "../../assets/superman.jpg",
     "ratings": 3.4,
     "genre": "fantasy",
     "length": 119,
@@ -42,7 +38,7 @@ export const db = {
     {
     "id": 2,
     "title": "Batman is watching",
-    "image": "https://i.picsum.photos/id/650/300/200.jpg?hmac=nuRnzrByBYKU6fsTl1xwz3MIpNrNjb0PjLJA5ypiOqU",
+    "image": "../../assets/batman.jpg",
     "ratings": 3.9,
     "genre": "Thriller",
     "length": 124,

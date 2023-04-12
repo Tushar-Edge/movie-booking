@@ -1,33 +1,23 @@
+<div class="row">
 <div class="card-container">
 
 <div class="card">
-    <img src="../assets/superman.jpg" alt="Placeholder Image">
+    <img [src]="movie.image" alt="Placeholder Image">
     <div class="card-content">
       <h4>{{movie.title}}</h4>
-      <p>Language: movie[0]</p>
-      <p>Genre : Thrilling</p>
-      <p>length : 180min</p>
-      <p>Ratings: 4.5</p>
-      <p>Show time: xx</p>
-      <p>price: 120 rs</p>
+      <p>Language: {{movie.language}}</p>
+      <p>Genre : {{movie.genre}}</p>
+      <p>length : {{movie.length}}</p>
+      <p>Ratings: {{movie.ratings}}</p>
+      <p>Show time: {{movie.showTime}}</p>
+      <p>price: {{movie.price}}</p>
       <a href="#">BOOK</a>
     </div>
   </div>
-  <div class="card">
-    <img src="../assets/batman.jpg" alt="Placeholder Image">
-    <div class="card-content">
-      <h4>Batman in watching</h4>
-      <p>Language: English</p>
-      <p>Genre : Thrilling</p>
-      <p>length : 180min</p>
-      <p>Ratings: 4.5</p>
-      <p>Show time: xx</p>
-      <p>price: 120 rs</p>
-      <a href="#">BOOK</a>
-    </div>
-  </div>
+  
 
  </div> 
+</div>
 
-  
+ 
   
