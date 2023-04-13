@@ -48,6 +48,7 @@ export const db = {
     "price": 370,
     "available": true
     }
+    
     ]
     }
     
